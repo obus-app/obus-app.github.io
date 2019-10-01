@@ -2,8 +2,6 @@
 Google fonts
  */
 
-@import url("https://fonts.googleapis.com/css?family=Gothic+A1:300,400,500,600,700,900");
-
 
 html,body {
   height: 100%;
@@ -70,6 +68,10 @@ button:focus {
   height: 2px;
   background: #0455A6;
   margin: 10px 0;
+}
+
+.light-blue {
+  color: #00A9DE;
 }
 
 .no-margin {
@@ -186,19 +188,13 @@ Preloader
 
 .bg-gradient {
   background-color: #0455A6;
-  background-image: -webkit-linear-gradient(0deg, #0455A6, #117AC9);
-  background-image: linear-gradient(90deg, #0455A6, #117AC9);
+  background-image: -webkit-linear-gradient(0deg, #1C2E48, #0455A6);
+  background-image: linear-gradient(0deg, #1C2E48, #0455A6);
 }
 
 .text-muted {
   color: inherit !important;
   opacity: 0.75 !important;
-}
-
-.bg-gradient {
-  background-color: #0455A6;
-  background-image: -webkit-linear-gradient(0deg, #0455A6, #117AC9);
-  background-image: linear-gradient(90deg, #0455A6, #117AC9);
 }
 
 .form-control,input[type="text"],input[type="email"],textarea {
@@ -407,8 +403,8 @@ i.text-medium {
   z-index: 3;
 }
 
-.svg-white {
-  fill: #fff;
+.svg-lb {
+  fill: #00A9DE;
 }
 
 .svg-top-left {
@@ -529,9 +525,39 @@ i.text-medium {
   color: #fff;
 }
 
-.melo {
+.obus {
   color: #152E47;
   font-weight:800;
+}
+
+.obus-logo {
+  max-width: 50%;
+  margin-bottom: 5%;
+}
+
+.ss-container {
+  margin: auto;
+}
+.ss-home {
+  max-width: 80%;
+}
+
+.row-links {
+  padding: 5% 0;
+}
+
+.img-store {
+  max-width: 70%;
+}
+
+.left-icon {
+  margin-left: auto;
+  display: block;
+}
+
+.right-icon {
+  margin-right: auto;
+  display: block;
 }
 
 .btn.btn-skin {
@@ -691,14 +717,14 @@ Navigation
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(4,85,166, 0.75);
+  background-color: rgba(28,46,72, 0.75);
   z-index: 1;
 }
 
 .screen .header-overlay.gradient {
   background-color: rgba(4,85,166, 0.5);
-  background-image: -webkit-linear-gradient(0deg, #117AC9, #0455A6);
-  background-image: linear-gradient(90deg, #117AC9, #0455A6);
+  background-image: -webkit-linear-gradient(0deg, #1C2E48, #103d7d);
+  background-image: linear-gradient(0deg, #1C2E48, #103d7d);
 }
 
 .screen.dark .text-large,.screen.dark p {
@@ -827,17 +853,6 @@ Icon-boxes
   color: #fff;
 }
 
-.bg-parallax .parallax-overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: #0455A6;
-  background-image: -webkit-linear-gradient(0deg, #0455A6, #117AC9);
-  background-image: linear-gradient(90deg, #0455A6, #117AC9);
-}
 
 .bg-parallax .container {
   position: relative;
