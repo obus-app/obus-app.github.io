@@ -461,14 +461,6 @@ i.text-medium {
   transition: all 0.3s;
 }
 
-.btn:hover {
-  -moz-transform: translateY(-5px);
-  -o-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-}
-
 .btn-lg {
   padding: 14px 25px;
 }
@@ -491,8 +483,8 @@ i.text-medium {
 }
 
 .btn-skin-border:hover,.btn-skin-border:focus,.btn-skin-border.active,.btn-skin-border.active:focus {
-  background: #0455A6;
-  box-shadow: 0px 0px 20px rgba(78, 239, 237, 0.35);
+  background: #00A9DE;
+  box-shadow: 0px 0px 10px rgba(78, 239, 237, 0.35);
   color: #fff;
 }
 
@@ -504,7 +496,7 @@ i.text-medium {
 
 .btn-white-border:hover,.btn-white-border:focus,.btn-white-border.active,.btn-white-border.active:focus {
   background-color: #0455A6;
-  box-shadow: 0px 0px 20px rgba(78, 239, 237, 0.35);
+  box-shadow: 0px 0px 10px rgba(4, 98, 191, 0.35);
   color: #fff;
 }
 
