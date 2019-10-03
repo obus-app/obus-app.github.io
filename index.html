@@ -49,17 +49,20 @@
                                         </p>
                                         <div class="collapse" id="newsletter1">
                                             <div class="newsletter-form">
-                                                <form method="post" action="#" class="subscribe-form">
+                                                <form>
                                                     <div class="row">
                                                         <div class="col-7 col-sm-8">
                                                             <div class="form-group">
-                                                                <input type="text" class="form-control" name="email"
+                                                                <input type="text" class="form-control"
+                                                                       id="mail"
+                                                                       name="entry.891882583"
                                                                        placeholder="Ingresa tu correo">
                                                             </div>
                                                         </div>
                                                         <div class="col-5 col-sm-4">
-                                                            <button class="btn btn-skin-border btn-block" name="submit"
-                                                                    type="submit">
+                                                            <button onclick="postContactToGoogle()"
+                                                                    class="btn btn-skin-border btn-block" name="submit"
+                                                                    type="button">
                                                                 Suscríbete
                                                             </button>
                                                         </div>
@@ -294,6 +297,26 @@
 <script src="assets/dist/js/plugins.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/wow.min.js"></script>
+
+<script>
+    function postContactToGoogle() {
+        var email = $('#mail').val();
+        $.ajax({
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSeZJK-v1Jhx5dn6lTPLzuftlNNZ-zMIagGFOhTZxB-7kTA2VQ/formResponse",
+            data: {"entry.891882583": email},
+            type: "POST",
+            dataType: "xml",
+            statusCode: {
+                0: function () {
+                    window.location.replace("thankyou.html");
+                },
+                200: function () {
+                    window.location.replace("thankyou.html");
+                }
+            }
+        });
+    }
+</script>
 
 </body>
 

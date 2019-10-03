@@ -36,6 +36,3 @@
         callback: function (anchor, toggle) { } // Function to run after scrolling
     });
 })(jQuery);
-
-
-
