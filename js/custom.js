@@ -2,9 +2,12 @@
     "use strict";
 
     /*Preloader*/
-    $(window).preloader({
-        delay: 500
+    $(window).ready(function () {
+        $(window).preloader({
+            delay: 500
+        });
     });
+
 
     // auto close navbar-collapse on click
     $('.nav-item>[data-scroll]').on('click', function () {
