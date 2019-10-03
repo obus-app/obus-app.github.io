@@ -68,7 +68,6 @@
                                                         </div>
                                                     </div>
                                                 </form>
-
                                             </div>
                                         </div>
                                     </div>
@@ -193,14 +192,16 @@
                 <div class="service-card1">
                     <img class="icon-features" src="assets/images/bus-placeholder.png" alt="Paso 1 Obus">
                     <h5>Mira tu bus en tiempo real</h5>
-                    <p>Conoce la ubicación exacta de tu bus en el mapa. Así podrás tener plena confianza de cuando alistarte y cuando esperar con tranquilidad.</p>
+                    <p>Conoce la ubicación exacta de tu bus en el mapa. Así podrás tener plena confianza de cuando
+                        alistarte y cuando esperar con tranquilidad.</p>
                 </div>
             </div>
             <div class="col-md-12 col-sm-12 col-lg-4 text-center">
                 <div class="service-card1">
                     <img class="icon-features" src="assets/images/schedule.png" alt="Paso 2 Obus">
                     <h5>Mira los horarios de las siguientes rutas</h5>
-                    <p>Podrás planear tu viaje con confianza, para evitar perder tiempo en el paradero y poder tomar la ruta que más se ajuste a tus planes.</p>
+                    <p>Podrás planear tu viaje con confianza, para evitar perder tiempo en el paradero y poder tomar la
+                        ruta que más se ajuste a tus planes.</p>
                 </div>
             </div>
             <div class="col-md-12 col-sm-12 col-lg-4 text-center">
@@ -227,23 +228,25 @@
                 <br/>
                 <p class="lead">Suscribete para obtener información del lanzamiento de tu nuevo compañero de viaje.</p>
                 <div class="newsletter-form">
-                    <form method="post" action="#" class="subscribe-form">
+                    <form>
                         <div class="row">
                             <div class="col-7 col-sm-8">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="email"
+                                    <input type="text" class="form-control"
+                                           id="mail1"
+                                           name="entry.891882583"
                                            placeholder="Ingresa tu correo">
                                 </div>
                             </div>
                             <div class="col-5 col-sm-4">
-                                <button class="btn btn-skin-border btn-block" name="submit"
-                                        type="submit">
+                                <button onclick="postContactToGoogle()"
+                                        class="btn btn-skin-border btn-block" name="submit"
+                                        type="button">
                                     Suscríbete
                                 </button>
                             </div>
                         </div>
                     </form>
-
                 </div>
             </div>
         </div>
@@ -303,7 +306,9 @@
 
 <script>
     function postContactToGoogle() {
-        var email = $('#mail').val();
+        var email1 = $('#mail').val()
+        var email2 = $('#mail1').val();
+        var email = email1?email1:email2
         $.ajax({
             url: "https://docs.google.com/forms/d/e/1FAIpQLSeZJK-v1Jhx5dn6lTPLzuftlNNZ-zMIagGFOhTZxB-7kTA2VQ/formResponse",
             data: {"entry.891882583": email},
@@ -311,10 +316,10 @@
             dataType: "xml",
             statusCode: {
                 0: function () {
-                    window.location.replace("thankyou.html");
+                    window.location.replace("gracias.html");
                 },
                 200: function () {
-                    window.location.replace("thankyou.html");
+                    window.location.replace("gracias.html");
                 }
             }
         });
