@@ -746,6 +746,46 @@ Navigation
   margin: 5% auto 5% auto;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  text-align: center;
+  height: 130px;
+  background-color: #0455A6;
+  background-image: -webkit-linear-gradient(0deg, #0455A6, #117AC9);
+  background-image: linear-gradient(90deg, #0455A6, #117AC9);
+  font-weight: 400;
+}
+
+.footer .svg-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.footer span {
+  color: #fff;
+  display: block;
+  opacity: 0.75;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0px;
+}
+
+.footer ul li a {
+  color: #fff;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 .screen .header-overlay.gradient {
   background-color: rgba(4, 85, 166, 0.5);
   background-image: -webkit-linear-gradient(0deg, #1c2e48, #103d7d);
@@ -1156,6 +1196,10 @@ Navigation
     background-image: linear-gradient(90deg, #0455a6, #117ac9);
     position: relative;
     font-weight: 400;
+  }
+
+  .right-align {
+    text-align: right;
   }
 
   .footer .svg-footer {
