@@ -6,7 +6,7 @@ body {
     font-family: 'Nunito', sans-serif;
     background: #fff;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -143,6 +143,10 @@ Preloader
   padding-top: 100px !important;
 }
 
+.pt-70 {
+  padding-top: 70px !important;
+}
+
 .pb-100 {
   padding-bottom: 100px !important;
 }
@@ -183,8 +187,8 @@ Preloader
 
 .bg-gradient {
   background-color: #0455A6;
-  background-image: -webkit-linear-gradient(0deg, #1C2E48, #0455A6);
-  background-image: linear-gradient(0deg, #1C2E48, #0455A6);
+  background-image: -webkit-linear-gradient(0deg, #032c64, #0455A6);
+  background-image: linear-gradient(0deg, #032c64, #0455A6);
 }
 
 .text-muted {
@@ -193,10 +197,10 @@ Preloader
 }
 
 .form-control,input[type="text"],input[type="email"],textarea {
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  border-radius: 0px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -ms-box-shadow: none;
@@ -231,7 +235,7 @@ i.text-medium {
 }
 
 .text-intro-large {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
@@ -526,7 +530,7 @@ i.text-medium {
   margin: auto;
 }
 .ss-home {
-  max-width: 80%;
+  max-width: 90%;
 }
 
 .row-links {
@@ -552,12 +556,14 @@ i.text-medium {
     padding-top: 2%;
     margin: auto;
     display: block;
+    max-width: 60%;
   }
 
   .right-icon {
     padding-top: 2%;
     margin: auto;
     display: block;
+    max-width: 60%;
   }
   .obus-logo {
     margin-top: 20%;
@@ -677,6 +683,11 @@ Navigation
   height: 100%;
   background-color: rgba(28, 46, 72, 0.75);
   z-index: 1;
+}
+
+.icon-features {
+  max-width: 20vh;
+  margin: 0 auto 5% auto;
 }
 
 .screen .header-overlay.gradient {
@@ -825,14 +836,13 @@ Navigation
 
   .service-card {
     padding: 1.5rem;
-    border: 1px solid #f5f5f5;
+    /*border: 1px solid #f5f5f5;*/
     border-radius: 5px;
     margin-bottom: 30px;
   }
 
   .service-card img {
     display: block;
-    margin: auto;
     border-radius: 5px;
   }
 
