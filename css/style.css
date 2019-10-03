@@ -611,14 +611,6 @@ i.text-medium {
   height: 100vh;
 }
 
-@media screen and (min-width: 769px) {
-  .ss-container-sm {
-    display: none;
-  }
-  .fullscreen {
-    height: 100vh;
-  }
-}
 .btn.btn-skin {
   border: 0px;
   background-color: #0455a6;
@@ -1326,5 +1318,13 @@ Navigation
     .row .col-md-6:nth-child(1) .feature-icon-alt {
       margin-top: 50px;
     }
+  }
+}
+@media screen and (min-width: 576px) {
+  .ss-container-sm {
+    display: none;
+  }
+  .fullscreen {
+    height: 100vh;
   }
 }
