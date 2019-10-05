@@ -603,12 +603,14 @@ i.text-medium {
     max-width: 60%;
   }
   .obus-logo {
-    margin-top: 20%;
+    margin-top: 10%;
+  }
+  .pt-100 {
+    padding-top: 30px !important;
   }
 }
 .ss-home-sm {
   width: 100vw;
-  height: 100vh;
 }
 
 .btn.btn-skin {
@@ -723,8 +725,12 @@ Navigation
 }
 
 .fullscreen {
-  height: 220vh;
+  height: 200vh;
   min-height: 740px;
+}
+
+.fullscreen2 {
+  height: 99vh;
 }
 
 .screen {
@@ -953,7 +959,7 @@ Navigation
     border: 1px solid #f5f5f5;
     border-radius: 5px;
     margin-bottom: 30px;
-    min-height: 45vh;
+    min-height: 60vh;
   }
 
   .service-card img {
