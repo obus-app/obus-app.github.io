@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
     <title>OBUS</title>
 </head>
 
@@ -49,20 +50,21 @@
                                         </p>
                                         <div class="collapse" id="newsletter1">
                                             <div class="newsletter-form">
-                                                <form>
+                                                <form action="postContactToGoogle()">
                                                     <div class="row">
                                                         <div class="col-7 col-sm-8">
                                                             <div class="form-group">
-                                                                <input type="text" class="form-control"
+                                                                <input type="email" class="form-control"
+                                                                       required
                                                                        id="mail"
                                                                        name="entry.891882583"
                                                                        placeholder="Ingresa tu correo">
                                                             </div>
                                                         </div>
                                                         <div class="col-5 col-sm-4">
-                                                            <button onclick="postContactToGoogle()"
+                                                            <button
                                                                     class="btn btn-skin-border btn-block" name="submit"
-                                                                    type="button">
+                                                                    type="submit">
                                                                 Suscríbete
                                                             </button>
                                                         </div>
@@ -228,20 +230,22 @@
                 <br/>
                 <p class="lead">Suscribete para obtener información del lanzamiento de tu nuevo compañero de viaje.</p>
                 <div class="newsletter-form">
-                    <form>
+                    <form action="postContactToGoogle()">
                         <div class="row">
                             <div class="col-7 col-sm-8">
                                 <div class="form-group">
-                                    <input type="text" class="form-control"
+                                    <input type="email" class="form-control" required
                                            id="mail1"
                                            name="entry.891882583"
-                                           placeholder="Ingresa tu correo">
+                                           placeholder="Ingresa tu correo"/>
                                 </div>
                             </div>
                             <div class="col-5 col-sm-4">
-                                <button onclick="postContactToGoogle()"
-                                        class="btn btn-skin-border btn-block" name="submit"
-                                        type="button">
+                                <button
+                                        class="btn btn-skin-border btn-block"
+                                        name="submit"
+                                        type="submit"
+                                        >
                                     Suscríbete
                                 </button>
                             </div>
